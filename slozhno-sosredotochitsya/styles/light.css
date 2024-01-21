@@ -1,0 +1,38 @@
+/*
+  Специально для светлой темы при наличии класса.
+  Здесь окажутся стили, которые нужно переопределить принудительно,
+  переключая тему
+*/
+
+.page.theme_light {
+    --color-pink: #FFF1F7;
+    --color-pink-1: #FFC2E6;
+    --color-pink-2: #FF0070;
+    --color-pink-3: #FF8DCB;
+    --color-pink-4: #F1B2CE;
+
+    --color-black-1: #353430;
+    --color-black-2: #32312D66;
+    --color-black-3: #000028;
+
+
+    --text-color-dac: var(--color-pink-1, #FFC2E6);
+    --shadow-color-pink: var(--color-pink-2, #FF0070);
+    --back-color-pink: var(--color-pink-3, #FF8DCB);
+    --back-main-pink: var(--color-pink, #FFF1F7);
+    --color-back-main: var(--color-pink, #FFF1F7);
+    --color-text-2: var(--color-black-1, #353430);
+
+    --text-color-1: var(--color-black-1, #353430);
+    --inl-colot-black: var(--color-black-2, #32312D66);
+    --text-color-3: var(--color-black-3, #000028);
+
+    --back-img-head: url("../images/cover-image-light.png");
+}
+
+@media (prefers-color-scheme: light) {
+    .page.theme_auto {
+
+    }
+}
+
