@@ -3,6 +3,7 @@
 .page {
     background-color: var(--color-back-main, #FFF1F7);
     width: 1024px;
+
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -14,7 +15,7 @@
 .header {
     margin: 0 auto 60px;
     max-width: 1024px;
-    min-height: 768px;
+    height: 100vh;
     background-image: var(--back-img-head);
     display: flex;
     flex-direction: column;
@@ -44,7 +45,7 @@
     background: transparent;
     cursor: pointer;
     text-align: center;
-    font-family: IBM Plex Mono, sans-serif;
+    font-family: "IBM Plex Mono", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -63,8 +64,8 @@
 
 .header__decoration-text {
     color: var(--text-color-dac, #FFC2E6);
-    font-family: IBM Plex Mono, sans-serif;
-    font-size: 157px;
+    font-family: "IBM Plex Mono", sans-serif;
+    font-size: clamp(9.8125rem, 5.7756rem + 6.3077vw, 7.25rem);
     font-style: normal;
     font-weight: 700;
     line-height: 82.5%;
@@ -80,7 +81,7 @@
 .header__description-text {
     color: var(--text-color-3, #32312D66);
     background-color: var(--back-color-pink, #FF8DCB);
-    font-family: IBM Plex Mono;
+    font-family: "IBM Plex Mono", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -109,7 +110,7 @@
 }
 
 .section__title {
-    font-family: IBM Plex Mono;
+    font-family: "IBM Plex Mono", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -125,13 +126,13 @@
 .wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 66%;
+    max-width: 100%;
     gap: 20px;
 }
 
 .section__filling {
     color: var(--color-black-1, #353430);
-    font-family: IBM Plex Mono;
+    font-family: "IBM Plex Mono", sans-serif;
     font-size: 15.5px;
     font-style: normal;
     font-weight: 700;
@@ -148,7 +149,7 @@
 
 .section__filling-about {
     color: var(--color-text-2, #353430);
-    font-family: IBM Plex Mono;
+    font-family: "IBM Plex Mono", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
@@ -182,7 +183,7 @@
 .in-images__title {
     color: var(--text-color-title, #353430);
     background-color: var(--back-color-pink, #FF8DCB);
-    font-family: IBM Plex Mono;
+    font-family: "IBM Plex Mono", sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 700;
@@ -216,6 +217,7 @@
 
 .footer {
     width: 100%;
+    height: 100vh;
     margin: 60px auto 0;
     display: flex;
     align-items: center;
@@ -227,7 +229,7 @@
 
 .footer-title {
     color: var(--color-pink-1, #FFC2E6);
-    font-family: IBM Plex Mono, sans-serif;
+    font-family: "IBM Plex Mono", sans-serif;
     font-size: 157px;
     font-style: normal;
     font-weight: 700;
@@ -260,18 +262,7 @@
 @media (width <= 768px) {
 
     .page {
-        max-width: 1024px;
-    }
-
-    .header {
-        min-height: 1024px;
-    }
-
-    .header__decoration-text {
-        font-size: 120px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 82.5%;
+        max-width: 768px;
     }
 
     .header__description-text {
@@ -280,18 +271,12 @@
 
     .section__title {
         width: 35%;
-
     }
-
-
 
     .wrapper_versa {
         flex-direction: column;
     }
 
-    .footer {
-        min-height: 1024px;
-    }
 }
 
 @media (width <= 375px) {
@@ -301,20 +286,20 @@
     }
 
     .header {
-        max-height: 668px;
         padding: 10px;
     }
 
     .header__decoration-text {
-        font-size: 116px;
+
     }
+
 
     .header__description-text_cont {
         width: 100%;
     }
 
     .header__description-text {
-        max-width: 100%;
+        width: 100%;
     }
 
     .main {
@@ -323,8 +308,7 @@
 
     .section {
         flex-direction: column;
-        width: 100%;
-
+        width: 88%;
     }
 
     .section__title {
@@ -343,10 +327,6 @@
     .in-images__list {
         display: flex;
         flex-direction: column;
-    }
-
-    .footer {
-        min-height: 667px;
     }
 
     .footer-title {
