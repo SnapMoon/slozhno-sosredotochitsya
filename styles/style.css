@@ -2,8 +2,8 @@
 
 .page {
     background-color: var(--color-back-main, #FFF1F7);
-    width: 1024px;
-
+    max-width: 1024px;
+    margin: 0 auto;
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
@@ -14,7 +14,7 @@
 
 .header {
     margin: 0 auto 60px;
-    max-width: 1024px;
+
     height: 100vh;
     background-image: var(--back-img-head);
     display: flex;
@@ -49,7 +49,6 @@
     font-size: 18px;
     font-style: normal;
     font-weight: 400;
-
 }
 
 .header__theme-menu-button_active {
@@ -65,7 +64,7 @@
 .header__decoration-text {
     color: var(--text-color-dac, #FFC2E6);
     font-family: "IBM Plex Mono", sans-serif;
-    font-size: clamp(9.8125rem, 5.7756rem + 6.3077vw, 7.25rem);
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
     font-style: normal;
     font-weight: 700;
     line-height: 82.5%;
@@ -230,7 +229,7 @@
 .footer-title {
     color: var(--color-pink-1, #FFC2E6);
     font-family: "IBM Plex Mono", sans-serif;
-    font-size: 157px;
+    font-size: clamp(7.25rem, 7.5271rem + -0.4329vw, 7.5rem);
     font-style: normal;
     font-weight: 700;
     line-height: 82.5%;
@@ -259,14 +258,19 @@
     inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
-@media (width <= 768px) {
 
+
+@media (width <= 768px) {
     .page {
         max-width: 768px;
     }
 
+    .header {
+        height: 100vh;
+    }
+
     .header__description-text {
-        max-width: 45%;
+        max-width: 100%;
     }
 
     .section__title {
@@ -280,19 +284,6 @@
 }
 
 @media (width <= 375px) {
-
-    .page {
-        max-width: 375px;
-    }
-
-    .header {
-        padding: 10px;
-    }
-
-    .header__decoration-text {
-
-    }
-
 
     .header__description-text_cont {
         width: 100%;
@@ -329,7 +320,5 @@
         flex-direction: column;
     }
 
-    .footer-title {
-        font-size: 100px;
-    }
+
 }
