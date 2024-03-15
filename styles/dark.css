@@ -17,6 +17,7 @@
     --text-color-3: #32312D66;
     --border-menu: #FF007066;
     --text-color-title: #353430;
+    --dec-color: #FF0070;
 
     --back-img-head: url("../images/cover-image-dark.png");
 
@@ -34,6 +35,7 @@
         --back-color-pink: #FF0070;
         --back-img-head: url("../images/cover-image-dark.png");
         --border-menu: #FF007066;
+        --dec-color: #FF0070;
     }
 }
 

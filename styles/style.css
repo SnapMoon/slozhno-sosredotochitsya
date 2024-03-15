@@ -267,15 +267,15 @@
 }
 
 .decorated-zone::after {
-    border-inline-end: 1px solid var(--text-color-title, #353430);
-    border-block-start: 1px solid var(--text-color-title, #353430);
+    border-inline-end: 1px solid var(--dec-color, #FF0070);
+    border-block-start: 1px solid var(--dec-color, #FF0070);
     inset-block-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
     inset-inline-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
 
 .decorated-zone::before {
-    border-inline-start: 1px solid var(--text-color-title, #353430);
-    border-block-end: 1px solid var(--text-color-title, #353430);
+    border-inline-start: 1px solid var(--dec-color, #FF0070);
+    border-block-end: 1px solid var(--dec-color, #FF0070);
     inset-block-end: clamp(10px, 0.0286rem + 2.5445vw, 20px);
     inset-inline-start: clamp(10px, 0.0286rem + 2.5445vw, 20px);
 }
