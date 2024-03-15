@@ -5,42 +5,35 @@
 */
 
 .page.theme_dark {
-    --color-pink: #FFF1F7;
-    --color-pink-1: #FFC2E6;
-    --color-pink-2: #FF0070;
-    --color-pink-3: #FF8DCB;
-    --color-pink-4: #F1B2CE;
+    --text-color-dac: #DB00FF;
+    --shadow-color-pink: #FF0070;
+    --back-color-pink: #FF8DCB;
+    --back-main-pink: #FFF1F7;
+    --color-back-main: #FFF1F7;
+    --color-text-2: #353430;
 
-    --color-black-1: #353430;
-    --color-black-2: #32312D66;
-    --color-black-3: #000028;
+    --text-color-1: #353430;
+    --inl-colot-black: #32312D66;
+    --text-color-3: #32312D66;
+    --border-menu: #FF007066;
+    --text-color-title: #353430;
 
-
-    --text-color-dac: var(--color-pink-1, #FFC2E6);
-    --shadow-color-pink: var(--color-pink-2, #FF0070);
-    --back-color-pink: var(--color-pink-3, #FF8DCB);
-    --back-main-pink: var(--color-pink, #FFF1F7);
-    --color-back-main: var(--color-pink, #FFF1F7);
-    --color-text-2: var(--color-black-1, #353430);
-
-    --text-color-1: var(--color-black-1, #353430);
-    --inl-colot-black: var(--color-black-2, #32312D66);
-    --text-color-3: var(--color-black-2, #32312D66);
-
-    --back-img-head: url("../images/cover-image-light.png");
+    --back-img-head: url("../images/cover-image-dark.png");
 
 }
 
 @media (prefers-color-scheme: dark) {
     .page.theme_auto {
-        --color-back-main: var(--color-black-3, #000028);
-        --text-color-title: var(--color-pink-2, #FF0070);
-        --text-color-des: var(--color-pink-4, #F1B2CE);
-        --text-color-1: var(--color-pink-2, #FF0070);
-        --color-text-2: var(--color-pink-4, #F1B2CE);
-        --text-color-3: var(--color-black-3, #000028);
-        --back-color-pink: var(--shadow-color-pink, #FF0070);
+        --text-color-dac: #DB00FF;
+        --color-back-main: #000028;
+        --text-color-title: #353430;
+        --text-color-des: #F1B2CE;
+        --text-color-1: #FF0070;
+        --color-text-2: #F1B2CE;
+        --text-color-3: #000028;
+        --back-color-pink: #FF0070;
         --back-img-head: url("../images/cover-image-dark.png");
+        --border-menu: #FF007066;
     }
 }
 

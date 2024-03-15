@@ -3,4 +3,19 @@
   и их переопределение под различные устройства
 */
 :root {
+
+    --text-color-dac: #FFC2E6;
+    --shadow-color-pink: #FF0070;
+    --back-color-pink: #FF8DCB;
+    --back-main-pink: #FFF1F7;
+    --color-back-main: #FFF1F7;
+    --color-text-2: #353430;
+
+    --text-color-1: #353430;
+    --inl-colot-black: #32312D66;
+    --text-color-3: #32312D66;
+    --border-menu: #32312D66;
+    --text-color-title: v;
+
+    --back-img-head: url("../images/cover-image-light.png");
 }
