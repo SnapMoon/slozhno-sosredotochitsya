@@ -6,9 +6,9 @@
 
 .page.theme_dark {
     --text-color-dac: #DB00FF;
-    --shadow-color-pink: #FF0070;
-    --back-color-pink: #FF8DCB;
-    --back-main-pink: #FFF1F7;
+    --shadow-color: #FF0070;
+    --back-color: #FF8DCB;
+    --back-main: #FFF1F7;
     --color-back-main: #FFF1F7;
     --color-text-2: #353430;
 
@@ -21,18 +21,19 @@
 
     --back-img-head: url("../images/cover-image-dark.png");
 
+    --rec-decor-vis: visible;
 }
 
 @media (prefers-color-scheme: dark) {
     .page.theme_auto {
         --text-color-dac: #DB00FF;
-        --color-back-main: #000028;
+        --color-back: #000028;
         --text-color-title: #353430;
         --text-color-des: #F1B2CE;
         --text-color-1: #FF0070;
         --color-text-2: #F1B2CE;
         --text-color-3: #000028;
-        --back-color-pink: #FF0070;
+        --back-color: #FF0070;
         --back-img-head: url("../images/cover-image-dark.png");
         --border-menu: #FF007066;
         --dec-color: #FF0070;

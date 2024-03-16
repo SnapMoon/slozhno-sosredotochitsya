@@ -1,13 +1,10 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-    background-color: var(--color-back-main, #FFF1F7);
+    background-color: var(--color-back, #FFF1F7);
     max-width: 1024px;
     margin: 0 auto;
-    background-image: var(
-            --back-img-head,
-            url("../images/cover-image-light.png")
-    );
+    background-image: var(--back-img-head, url("../images/cover-image-light.png"));
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -15,20 +12,47 @@
     /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
+.link {
+    text-decoration: none;
+    text-shadow: 2px 2px 0 var(--shadow-color, #ff0070);
+}
 
 
+.rec-decor {
+    position: absolute;
+    z-index: -1;
+    visibility: var(--rec-decor-vis, visible);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    inset-inline-end: 30px;
+    inset-block-start: 20px;
+}
 
+.rec-decor::after {
+    content: "";
+    display: inline-block;
+    background: var(--shadow-color, #ff0070);
+    box-shadow: 0 0 2px 2px var(--shadow-color, #ff0070);
+    border-radius: 50%;
+    block-size: 10px;
+    inline-size: 10px;
+}
 
+.rec-decor::before {
+    content: "REC";
+    line-height: 24px;
+    color: var(--shadow-color, #ff0070);
+}
 
 .shadow {
-    text-shadow: 4px 4px 0 var(--shadow-color-pink, #FF0070);
+    text-shadow: 4px 4px 0 var(--shadow-color, #FF0070);
 }
 
 .header {
     margin: 0 auto 60px;
     min-height: 668px;
     height: 100vh;
-    max-height: 768px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -74,7 +98,7 @@
 }
 
 .header__theme-menu-button:focus-visible {
-    outline: 1px solid currentColor;
+    border-block-end-color: currentColor;
 }
 
 .header__theme-menu-button:hover {
@@ -88,7 +112,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 82.5%;
-    padding-top: 160px;
+
 }
 
 .header__description-text_cont {
@@ -99,7 +123,7 @@
 
 .header__description-text {
     color: var(--text-color-3, #32312D66);
-    background-color: var(--back-color-pink, #FF8DCB);
+    background-color: var(--back-color, #FF8DCB);
     font-family: "IBM Plex Mono", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -151,20 +175,23 @@
 }
 
 .section__filling {
-    color: #353430;
+    color: var(--color-text-2, #353430);
     font-family: "IBM Plex Mono", sans-serif;
-    font-size: 15.5px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 700;
-    line-height: 23.5px;
+    line-height: 23.4px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .section__filling-subtitle {
-    background: var(--back-color-pink, #FF8DCB);
+    background: var(--back-color, #FF8DCB);
     color: var(--text-color-3, #32312D66);
+    font-weight: 700;
+    font-size: 18px;
+    font-family: "IBM Plex Mono", sans-serif;
 }
 
 .section__filling-about {
@@ -183,7 +210,6 @@
 
 .wrapper_versa {
     flex-direction: row;
-    max-width: 100%;
 }
 
 .section__filling_versa {
@@ -191,7 +217,7 @@
 }
 
 .extra {
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .in-images {
@@ -201,7 +227,7 @@
 
 .in-images__title {
     color: var(--text-color-title, #353430);
-    background-color: var(--back-color-pink, #FF8DCB);
+    background-color: var(--back-color, #FF8DCB);
     font-family: "IBM Plex Mono", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -244,7 +270,6 @@
     min-height: 768px;
     padding: 20px;
     position: relative;
-    max-height: 768px;
 }
 
 .footer-title {
@@ -283,13 +308,37 @@
 
 
 @media (width <= 768px) {
+
     .page {
         max-width: 768px;
     }
 
-    .header__description-text {
-        max-width: 100%;
+    .header {
+        display: flex;
+        justify-content: space-around;
+        align-content: space-between;
+        padding-top: 20px;
+        padding-bottom: 35px;
+
     }
+
+    .header__theme-menu {
+        align-items: end;
+        margin-right: 20px;
+
+        flex-direction: column;
+    }
+
+    .header__theme-menu-list {
+        flex-direction: column;
+    }
+
+    .header__decoration-text {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+
 
     .section__title {
         width: 35%;
@@ -302,6 +351,14 @@
 }
 
 @media (width <= 375px) {
+
+    .header__theme-menu {
+        margin-right: 10px;
+    }
+
+    .header__description-text {
+        max-width: 100%;
+    }
 
     .header__decoration-text {
         font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
