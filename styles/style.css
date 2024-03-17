@@ -188,6 +188,8 @@
     flex-direction: column;
     max-width: 100%;
     gap: 20px;
+
+
 }
 
 .section__filling {
@@ -225,7 +227,8 @@
 }
 
 .wrapper_versa {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3,1fr)
 }
 
 .section__filling_versa {
