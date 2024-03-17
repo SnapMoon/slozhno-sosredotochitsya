@@ -3,24 +3,20 @@
   и их переопределение под различные устройства
 */
 :root {
+    --text-color-dac: #DB00FF;
+    --shadow-color: #FF0070;
+    --back-color: #FF0070;
+    --back-main: #FF0070;
+    --color-text-fil: #F1B2CE;
 
-    .page.theme_dark {
-        --text-color-dac: #DB00FF;
-        --shadow-color: #FF0070;
-        --back-color: #FF8DCB;
-        --back-main: #FFF1F7;
-        --color-back-main: #FFF1F7;
-        --color-text-2: #353430;
+    --text-color-button: #FF0070;
+    --inl-colot-black: #32312D66;
+    --text-color-subtitle: #FF0070;;
+    --border-menu: #FF007066;
+    --text-color-title: #000028;
+    --dec-color: #FF0070;
 
-        --text-color-1: #353430;
-        --inl-colot-black: #32312D66;
-        --text-color-3: #32312D66;
-        --border-menu: #FF007066;
-        --text-color-title: #353430;
-        --dec-color: #FF0070;
+    --back-img-head: url("../images/cover-image-dark.png");
 
-        --back-img-head: url("../images/cover-image-dark.png");
-        --rec-decor-vis: visible;
-
-    }
+    --rec-decor-vis: visible;
 }

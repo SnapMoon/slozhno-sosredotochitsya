@@ -16,6 +16,19 @@
     text-decoration: none;
     text-shadow: 2px 2px 0 var(--shadow-color, #ff0070);
 }
+.link:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.link:focus {
+    outline: 0;
+}
+
+.link:focus-visible {
+    outline: 1px solid currentColor;
+    border-radius: 2px;
+}
 
 
 .rec-decor {
@@ -41,12 +54,14 @@
 
 .rec-decor::before {
     content: "REC";
+    font-family: "IBM Plex Mono", sans-serif;
+    font-size: 18px;
     line-height: 24px;
     color: var(--shadow-color, #ff0070);
 }
 
 .shadow {
-    text-shadow: 4px 4px 0 var(--shadow-color, #FF0070);
+
 }
 
 .header {
@@ -75,7 +90,7 @@
 .header__theme-menu-button {
     border: 1px solid transparent;
     padding: 2px 12px;
-    color: var(--text-color-1, #353430);
+    color: var(--text-color-button, #353430);
     line-height: 18px;
     text-transform: lowercase;
     background: transparent;
@@ -112,7 +127,8 @@
     font-style: normal;
     font-weight: 700;
     line-height: 82.5%;
-
+    padding-top: 160px;
+    text-shadow: 4px 4px 0 var(--shadow-color, #FF0070);
 }
 
 .header__description-text_cont {
@@ -122,8 +138,8 @@
 }
 
 .header__description-text {
-    color: var(--text-color-3, #32312D66);
-    background-color: var(--back-color, #FF8DCB);
+    color: var(--text-color-title, #32312D66);
+    background-color: var(--back-color, #FF0070);
     font-family: "IBM Plex Mono", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -160,7 +176,7 @@
     line-height: 23.4px;
     max-width: 100%;
     min-width: 32% ;
-    color: var(--text-color-1, #353430);
+    color: var(--text-color-subtitle, #353430);
 }
 
 .section__title.section__extra {
@@ -175,7 +191,7 @@
 }
 
 .section__filling {
-    color: var(--color-text-2, #353430);
+    color: var(--color-text-fil, #353430);
     font-family: "IBM Plex Mono", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -188,14 +204,14 @@
 
 .section__filling-subtitle {
     background: var(--back-color, #FF8DCB);
-    color: var(--text-color-3, #32312D66);
+    color: var(--text-color-title, #32312D66);
     font-weight: 700;
     font-size: 18px;
     font-family: "IBM Plex Mono", sans-serif;
 }
 
 .section__filling-about {
-    color: var(--color-text-2, #353430);
+    color: var(--color-text-fil, #353430);
     font-family: "IBM Plex Mono", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -267,9 +283,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 768px;
+    min-height: 668px;
     padding: 20px;
     position: relative;
+    text-shadow: 2px 2px 0 var(--shadow-color, #FF0070);
 }
 
 .footer-title {
@@ -319,13 +336,12 @@
         align-content: space-between;
         padding-top: 20px;
         padding-bottom: 35px;
-
     }
 
     .header__theme-menu {
         align-items: end;
         margin-right: 20px;
-
+        padding-top: 75px;
         flex-direction: column;
     }
 
@@ -334,11 +350,18 @@
     }
 
     .header__decoration-text {
-        margin-left: 10px;
-        margin-top: 20px;
+        padding-top: 20px;
+
+    }
+
+    .header__description-text {
+        margin-bottom: 70px;
     }
 
 
+    .section__filling_versa {
+        width: 100%;
+    }
 
     .section__title {
         width: 35%;
@@ -352,8 +375,13 @@
 
 @media (width <= 375px) {
 
+    .header {
+        margin: 0 auto;
+    }
+
     .header__theme-menu {
         margin-right: 10px;
+        padding-top: 8px;
     }
 
     .header__description-text {
@@ -362,6 +390,8 @@
 
     .header__decoration-text {
         font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+        margin-left: 10px;
+
     }
 
     .header__description-text_cont {
@@ -375,16 +405,18 @@
 
     .main {
         width: 100%;
+        margin-top: 40px;
+        gap: 50px;
     }
 
     .section {
         flex-direction: column;
         width: 100%;
+        padding: 0 10px;
     }
 
     .section__title {
         width: 100%;
-
     }
 
     .section__filling {
@@ -392,17 +424,39 @@
     }
 
     .section-versa {
+        width: 100%;
         flex-direction: column;
+    }
+    .section__title.section__extra {
+        width: 100%;
+    }
+
+    .in-images {
+        padding: 0 10px;
+    }
+
+    .in-images__title {
+        margin-bottom: 10px;
     }
 
     .in-images__list {
         display: flex;
         flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer {
+        margin-top: 40px;
     }
 
     .footer-title {
         font-size: clamp(7.25rem, 7.5271rem + -0.4329vw, 7.5rem);
     }
 
+
+    .rec-decor {
+        inset-inline-end: 19px;
+        inset-block-start: 11px;
+    }
 
 }
