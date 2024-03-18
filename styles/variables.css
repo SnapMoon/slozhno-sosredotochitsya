@@ -3,20 +3,19 @@
   и их переопределение под различные устройства
 */
 :root {
-    --text-color-dac: #DB00FF;
+    --text-color-dac: #FFC2E6;
     --shadow-color: #FF0070;
-    --back-color: #FF0070;
-    --back-main: #FF0070;
-    --color-text-fil: #F1B2CE;
+    --back-color: #FF8DCB;
+    --back-main-pink: #FFF1F7;
+    --color-back: #000028;
+    --color-text-fil: #353430;
 
-    --text-color-button: #FF0070;
-    --inl-colot-black: #32312D66;
-    --text-color-subtitle: #FF0070;;
-    --border-menu: #FF007066;
+    --text-color-button: #353430;
+    --text-color-subtitle: #000028;
+    --border-menu: #32312D66;
     --text-color-title: #000028;
-    --dec-color: #FF0070;
+    --dec-color: #353430;
 
-    --back-img-head: url("../images/cover-image-dark.png");
-
-    --rec-decor-vis: visible;
+    --back-img-head: url("../images/cover-image-light.png");
+    --rec-decor-vis: hidden;
 }

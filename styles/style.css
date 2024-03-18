@@ -17,8 +17,7 @@
     text-shadow: 2px 2px 0 var(--shadow-color, #ff0070);
 }
 .link:hover {
-    text-decoration: underline;
-    text-underline-offset: 2px;
+    border-bottom: 1px solid currentColor;
 }
 
 .link:focus {
@@ -27,7 +26,6 @@
 
 .link:focus-visible {
     outline: 1px solid currentColor;
-    border-radius: 2px;
 }
 
 
@@ -58,10 +56,6 @@
     font-size: 18px;
     line-height: 24px;
     color: var(--shadow-color, #ff0070);
-}
-
-.shadow {
-
 }
 
 .header {
@@ -139,7 +133,7 @@
 
 .header__description-text {
     color: var(--text-color-title, #32312D66);
-    background-color: var(--back-color, #FF0070);
+    background-color: var(--back-color, FF0070);
     font-family: "IBM Plex Mono", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -193,7 +187,7 @@
 }
 
 .section__filling {
-    color: var(--color-text-fil, #353430);
+    color: var(--color-text-fil, #F1B2CE);
     font-family: "IBM Plex Mono", sans-serif;
     font-size: 18px;
     font-style: normal;
@@ -232,7 +226,7 @@
 }
 
 .section__filling_versa {
-    width: 315px;
+    max-width: 315px;
 }
 
 .extra {
@@ -289,7 +283,7 @@
     min-height: 668px;
     padding: 20px;
     position: relative;
-    text-shadow: 2px 2px 0 var(--shadow-color, #FF0070);
+
 }
 
 .footer-title {
@@ -299,7 +293,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 82.5%;
-
+    text-shadow: 2px 2px 0 var(--shadow-color, #FF0070);
 }
 
 .decorated-zone::after,
@@ -363,7 +357,7 @@
 
 
     .section__filling_versa {
-        width: 100%;
+        max-width: 100%;
     }
 
     .section__title {
@@ -371,7 +365,7 @@
     }
 
     .wrapper_versa {
-        flex-direction: column;
+        display: flex;
     }
 
 }
