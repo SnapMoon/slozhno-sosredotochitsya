@@ -8,12 +8,12 @@
     --text-color-dac: #FFC2E6;
     --shadow-color: #FF0070;
     --back-color: #FF8DCB;
-    --back-main-pink: #FFF1F7;
     --color-back: #FFF1F7;
     --color-text-fil: #353430;
+    --shadow-color-link: #FF8DCB;
 
     --text-color-button: #353430;
-    --text-color-subtitle: #000028;
+    --text-color-subtitle: #353430;
     --border-menu: #32312D66;
     --text-color-title: #353430;
     --dec-color: #353430;
@@ -27,11 +27,11 @@
         --text-color-dac: #FFC2E6;
         --shadow-color: #FF0070;
         --back-color: #FF8DCB;
-        --back-main-pink: #FFF1F7;
         --color-back: #FFF1F7;
         --color-text-fil: #353430;
 
-        --text-color-subtitle: #000028;
+        --text-color-button: #353430;
+        --text-color-subtitle: #353430;
         --border-menu: #32312D66;
         --text-color-title: #353430;
         --dec-color: #353430;

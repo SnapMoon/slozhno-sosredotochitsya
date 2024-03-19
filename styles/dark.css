@@ -14,6 +14,7 @@
     --color-back: #000028;
 
     --text-color-button: #FF0070;
+    --shadow-color-link: #FF0070;
 
     --text-color-subtitle: #FF0070;
     --border-menu: #FF007066;
@@ -27,23 +28,25 @@
 
 @media (prefers-color-scheme: dark) {
     .page {
-    --text-color-dac: #DB00FF;
-    --shadow-color: #FF0070;
-    --back-color: #FF0070;
-    --back-main: #FFF1F7;
-    --color-back-main: #FFF1F7;
-    --color-text-fil: #F1B2CE;
+        --text-color-dac: #DB00FF;
+        --shadow-color: #FF0070;
+        --back-color: #ff0070;
+        --back-main: #FFF1F7;
+        --color-back-main: #FFF1F7;
+        --color-text-fil: #F1B2CE;
         --color-back: #000028;
 
         --text-color-button: #FF0070;
-    --text-color-subtitle: #FF0070;
-    --border-menu: #FF007066;
-    --text-color-title: #000028;
-    --dec-color: #FF0070;
+        --shadow-color-link: #FF0070;
 
-    --back-img-head: url("../images/cover-image-dark.png");
+        --text-color-subtitle: #FF0070;
+        --border-menu: #FF007066;
+        --text-color-title: #000028;
+        --dec-color: #FF0070;
 
-    --rec-decor-vis: visible;
+        --back-img-head: url("../images/cover-image-dark.png");
+
+        --rec-decor-vis: visible;
     }
 }
 
